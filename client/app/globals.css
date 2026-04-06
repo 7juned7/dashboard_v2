@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+html {
+  color: var(--text-primary);
+}
+* {
+  color: inherit;
+}
+:root {
+  /* 🌞 Light Theme */
+  --bg: #f9fafb;
+  --card: #ffffff;
+  --border: #e5e7eb;
+
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+
+  --primary: #3b82f6;
+  --success: #22c55e;
+  --danger: #ef4444;
+}
+
+.dark {
+  /* 🌙 Dark Theme */
+  --bg: #0f172a;
+  --card: #111827;
+  --border: #1f2937;
+
+  --text-primary: #f9fafb;
+  --text-secondary: #9ca3af;
+
+  --primary: #3b82f6;
+  --success: #22c55e;
+  --danger: #ef4444;
+}
+
+/* 🌍 Base Styles */
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-family: "Inter", sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+/* 🧱 Utility Classes */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 16px;
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.btn {
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 500;
+  transition: 0.2s;
+  color: var(--text-primary);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-danger {
+  background: var(--danger);
+  color: white;
+}
+
+.btn-success {
+  background: var(--success);
+  color: white;
+}
+/* 🔥 Fix text visibility everywhere */
+input,
+select,
+textarea {
+  color: var(--text-primary);
+}
+
+::placeholder {
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+/* Recharts text fix */
+.recharts-wrapper {
+  color: var(--text-primary);
+}
